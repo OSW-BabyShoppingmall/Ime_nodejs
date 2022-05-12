@@ -7,7 +7,6 @@ const song=require('./lib/song.js');
 var fs=require('fs');
 const express = require('express');//1
 const app = express();//2
-app.use(express.static("public"));
 const PORT = 3000;
 const handleListening = () => {
     console.log(`Listening on: http://localhost:${PORT}`)
@@ -29,16 +28,25 @@ var server = http.createServer(function (request, response) {
 
 */
 
+app.use(express.static("public"));
 
-
-const handleHome = (req, res) => {
-  res.send('hello from home');
-};
-
-app.get('/profile', handleProfile);
 app.get('/', function(req,res){
-  fs.readFile('./index.html',function(error,data){
+  fs.readFile('./public/index.html',function(error,data){
     res.writeHead(200, {'Content-Type' : 'text/html'});
+    res.end(data);
+  });
+});
+
+app.get('/notice', function(req,res){
+  fs.readFile('./public/index.html',function(error,data){
+    res.writeHead(200, {'Content-Type' : 'notice/html'});
+    res.end(data);
+  });
+});
+
+app.get('/notice', function(req,res){
+  fs.readFile('./public/index.html',function(error,data){
+    res.writeHead(200, {'Content-Type' : 'qna/html'});
     res.end(data);
   });
 });
