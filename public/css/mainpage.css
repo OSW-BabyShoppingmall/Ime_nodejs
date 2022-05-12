@@ -1,0 +1,13 @@
+/*form { background-color:dimgrey; padding:20px;}*/
+#text{color:white; font-weight:500; }
+.genre{background-color:dimgrey; padding:10px;}
+a{text-decoration:none;}
+a#mudi{color:lime;}
+#playicon{position:fixed; right:10px;}
+.genre{
+    display:flex;
+    align-items:center;
+}
+#img{
+    margin-right:10px;
+}

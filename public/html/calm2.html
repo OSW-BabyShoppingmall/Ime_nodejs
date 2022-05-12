@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>잔잔한 노래</title>
+    <link type="text/css" rel="stylesheet" href="../css/subpage.css">
+    <script src="../js/text.js"></script>
+    <script src="../js/div.js"></script>
+    <script src="../js/addsong.js"></script>
+</head>
+
+
+<body>
+     <h3>잔잔한 노래 
+      <span class="playlist_title">
+          <details>
+            <summary>플레이리스트 목록</summary>
+            
+            <div class="playlist"><a href="../index.html">main page </a></div>
+            <p class="playlist"><a href="trip.html">trip③
+                <img class="playicon" src="../img/play.png" width="15" height="15">
+            </a></p>
+            <p class="playlist"><a href="sweet.html">sweet③
+                <img class="playicon" src="../img/play.png" width="15" height="15">
+            </a></p>
+            <p class="playlist"><a href="pop.html">pop③
+                <img class="playicon" src="../img/play.png" width="15" height="15">
+            </a></p>
+            <p class="playlist"><a href="cool.html">cool③
+                <img class="playicon" src="../img/play.png" width="15" height="15">
+            </a></p>
+            <p class="playlist"><a href="fall.html">fall③
+                <img class="playicon" src="../img/play.png" width="15" height="15">
+            </a></p>
+           
+          </details>
+        </span>
+    <input type="text" id="songtitle" size="12" placeholder="곡 제목을 쓰세요" >
+    <input type="submit" id="songtitle_submit" onclick="AddSongTitle();
+    ">
+    <input type="text" id="songartist" size="12" placeholder="곡 가수를 쓰세요" >
+    <input type="submit" id="songartist_submit" onclick="AddSongArtist();
+    ">
+    
+    <input type="text" id="songdiary" size="30" placeholder="곡에 대한 기록을 하세요" >
+    <input type="submit" id="songdiary_submit" onclick="AddSongDiary();
+    ">
+     </h3> <hr>
+     <div id="playlist"></div>
+     <p></p>
+        <div class="genre">instagram<br>DEAN 
+            <span class="diary"> 우울할때마다 듣는 노래 고3제주도 여행갔을때 많이 들었다</span>
+        </div>
+       <p></p>
+       <div class="genre">사람은 이상하고 사랑은 모르겠어<br>이예린
+            <span class="diary"> 21년 여름방학 오픽시험 보기전에 갔던 카페에서 나오던 노래 몽환적이고 잔잔한게 내 취향이다</span>
+       </div>
+       <p></p>
+
+       <div class="genre">To Die For<br>DEAN 
+            <span class="diary"> 전역하고 듣게 된 노래 전역하고 공허한 마음이 들때 이 노래를 들었다 너무 감성적인노래다</span>
+       </div>
+       <p></p>
+
+       <div class="genre">To Die For<br>DEAN 
+        <span id="diary4" class="diary"></span>
+   </div>
+       
+       
+    <input type="text" id="textbox" size="30" placeholder="곡에 대한 기록을 하세요" >
+    <input type="submit" id="submit" onclick="DiaryRecord();
+    ">
+    <div id="area"></div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shoppingmall</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+    
+
+<div class="wrapper">
+
+    <div id="header">
+
+        <div class="menubar">
+
+            
+            
+
+                    <div class="top_right">
+                            
+                        <ul>
+                            <li>Items
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="Warm.html">Warm</a></li>
+                                        <li><a href="#">Cool</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>Service Center
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="notice.html">Notice</a></li>
+                                        <li><a href="qna.html">Q&A</a></li>
+                                        <li><a href="#">Review</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>Account
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="#">Log In</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    
+                    </div>
+    
+        </div>
+
+        <div class="top_left">
+            
+
+            <ul> 
+                <li> <a href="index.html"><img src="img/textlogo.png" id="textlogo">
+                    <img id="logo" src="img/logo2-removed.png">
+                    </a> 
+                </li> 
+                </ul>
+
+        </div>
+
+        
+    
+        
+        <div class="imagecontainer">
+                
+            <div class="image">
+            </div>
+        
+            <div class="image" style="background-image:url('img/kids3.jpg')">
+            </div>
+            
+            <div class="image" style="background-image:url('img/kids5.jpg')">
+            </div>
+            
+            <div class="image" style="background-image:url('img/kids6.jpg')">
+            </div>  
+
+                   
+            
+        </div>
+
+        <div class="radiowrap">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+        </div>
+
+      
+        <br>
+        <br>
+       
+
+        
+        <script>
+
+            
+            var move=true;
+            var counter = 2;
+
+            document.getElementById('radio1').checked=true;
+            if(move){
+                console.log("inner"+move);
+            setInterval(function(){
+
+            var radioid=document.getElementById('radio' + counter);
+            radioid.checked = true;
+            document.querySelector('.imagecontainer').style.transform=`translate(${(counter-1)*(-100)}vw)`;
+            
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+            }, 3500);
+        }
+       
+
+            document.querySelector('#radio1').addEventListener('click' ,function() {
+                document.querySelector('.imagecontainer').style.transform='translate(+0vw)';
+            });
+            document.querySelector('#radio2').addEventListener('click' ,function() {
+                document.querySelector('.imagecontainer').style.transform='translate(-100vw)';
+            });
+            document.querySelector('#radio3').addEventListener('click' ,function() {
+                document.querySelector('.imagecontainer').style.transform='translate(-200vw)';
+            });
+            document.querySelector('#radio4').addEventListener('click' ,function() {
+                document.querySelector('.imagecontainer').style.transform='translate(-300vw)';
+            });
+            document.querySelector('#radio5').addEventListener('click' ,function() {
+                document.querySelector('.imagecontainer').style.transform='translate(-400vw)';
+            });
+        
+            
+        
+        </script>
+
+  </div>
+   
+
+
+    <div class="content">
+        
+        
+        <div class="categoryimage">
+
+            <div class="coolwrapper">
+                <div class="mainimage">
+                    <img class="mainimage__img" src="img/kids11.jpg" alt="Bricks">
+                    <div class="mainimage__overlay coolimage__overlay--primary">
+                        <div class="mainimage__title"><a id="coolanchor" href="cool.html">Cool</a></div>
+                    
+                    
+                    </div>
+
+                
+                </div>
+                <div class="coolimage_description">
+                    Not a hot summer, but a pleasant, <br> &nbsp; &nbsp; cool, refreshing summer
+                </div>
+      
+            
+     
+            
+            </div>
+            <br>
+            <br>
+
+            <div class="warmwrapper">
+
+
+                <div class="warmimage_description">
+                    Feel the softness and warmness
+                    <br> 
+                        &nbsp; &nbsp; &nbsp;  of the moment you touch
+                </div>
+            
+                <div class="warmimage">
+                    <img class="mainimage__img" src="img/kids10.jpg" alt="Bricks">
+                    <div class="mainimage__overlay warmimage__overlay--primary">
+                        <div class="mainimage__title"><a id="warmanchor" href="Warm.html">Warm</a></div>
+                    </div>
+
+
+                   
+                    
+                </div>
+                
+            </div>
+
+
+            
+            
+           
+ 
+        </div>
+
+
+        <div class="blank"></div>
+        
+        <script>
+            function Createblanks() {
+                var blank=document.getElementsByClassName('blank')[0];
+                blank.innerHTML="<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"
+            }
+            Createblanks();
+        </script>
+    
+        <hr>
+
+        
+
+
+        
+    
+    
+
+
+      <div class="infowrapper">
+        <div class="infoimage">
+            <img src="img/kids8.jpg" style="height:600px;">
+        </div>
+       
+        <div class="infodescription">
+            
+            <p style="font-size:100px;">Ime</p>
+
+            <p style="font-size:20px;"><b>shopping for my child</b></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+
+            Ime is an infant shopping mall website.<br>
+            We sell cool and warm clothes.<br>
+                Unlike traditional shopping mall websites, <br>
+                We threw away the complicated screen composition.<br>
+                Through this, customers can easily access the items<br>
+                and be able to purchase easily.<br>
+                There are various clothes, so feel free to look around!!
+            </div>
+
+    </div> 
+    <hr>
+</div> 
+
+    
+
+    
+    <div id="footer">
+      
+        
+
+      
+      <div class="bottom_left"><br><h3>Developer Info</h3>
+          <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          
+      </div>
+          
+
+      <div class="bottom_middle"><br><h3>Contact</h3>
+      <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+      <br>010-2693-XXXX<br>
+      <br><a href="#" style="background-color:aliceblue;">How to visit</a></div>
+
+
+      <div class="bottom_right"><br><h3>Custmoer Info</h3>
+        <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+        Friday :  09:00AM ~  05:00PM<br>
+        Break Time :  12:00PM ~ 01:00PM<br>
+        Closed on weekends/holidays</div>
+      
+
+      
+    </div>
+
+
+</div>
+    
+</body>
+</html>
