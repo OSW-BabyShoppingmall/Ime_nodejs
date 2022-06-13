@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="../css/signupstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/signup.js"></script>
+    <script src="../js/greeting.js"></script>
+    
+  </head>
+<body>
+
+  <div class="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid menubar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo2-removed.png" alt="" width="70px;" height="35px;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""><a href="../index.html"><span class="menuicon glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="menuicon glyphicon glyphicon-usd"></span> Items
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../html/Cool.html"><span class="menuicon glyphicon glyphicon-sunglasses"></span> Cool</a></li>
+                <li><a href="../html/Warm.html"><span class="menuicon glyphicon glyphicon-fire"></span> Warm</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="menuicon glyphicon glyphicon-headphones"></span> Service Center
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../html/notice.html"><span class="menuicon glyphicon glyphicon-bullhorn"></span> Notice</a></li>
+                <li><a href="../html/qna.html"><span class="menuicon glyphicon glyphicon-question-sign"></span> Q&A</a></li>
+                <li><a href="../html/map.html"><span class="menuicon glyphicon glyphicon-map-marker"></span> Map</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="menuicon glyphicon glyphicon-user"></span> Account
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../html/login.html"><span class="menuicon glyphicon glyphicon-log-in"></span> Log in</a></li>
+                <li><a href="../html/signup.html"><span class="menuicon glyphicon glyphicon-new-window"></span> Sign up</a></li>
+                <li><a href="../html/shopping_basket.html"><span
+                  class="menuicon glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+
+              </ul>
+            </li>
+            <li ><a href="#" id="welcomename" style="display:none;"></a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+
+<div class="container-fluid text-center logoimg">
+  
+
+  <ul> 
+      <li> <a href="../index.html">
+          <img src="../img/textlogo.png" id="textlogo">
+          <img id="logo" src="../img/logo2-removed.png">
+          </a> 
+      </li> 
+      </ul>
+
+</div>
+    
+        
+    
+  
+
+  
+    
+
+    
+        <div class="row">
+            <div class="container-fluid text-center col-sm-4 bg-3 ">
+            </div>	
+        
+            <div class="container-fluid text-center col-sm-4 bg-4 ">
+                <h2>Sign up</h2>
+                <form> 
+                      <div class="form-group">
+                            <input type="text"  id="id" autocomplete="off" placeholder="ID"  style="width:180px;height:32px;" >
+                            <button type="button" class="btn btn-info" id="verification" onclick="doubleCheck();">Double Check</button>
+                      </div>
+                      
+
+                      
+                      <div class="form-group">
+                          <input type="password" id="password_1" class="pw" placeholder="Password"
+                          style="width:300px;height:32px">
+                      </div>
+                    
+                      <div class="form-group">
+                        <input type="password" id="password_2" class="pw" placeholder="Reconfirm Password"
+                          style="width:300px;height:32px"> 
+                          <br>  
+                          <span id="alert-success" style="display: none; color:#0fb9df; font-weight: bold;" >Password is same</span>
+                          <span id="alert-danger" style="display: none; color: #d92742; font-weight: bold; ">Password is different</span>
+                      </div>
+                    
+                      
+
+                     
+
+                    
+
+                      <div class="form-group">
+                        <input type="text"  id="name" placeholder="Name" autocomplete="off" style="width:300px;height:32px;">
+                      </div>
+                      
+                     
+                      <div class="form-group" >
+                        <input id="year" type="text" autocomplete="off" placeholder="year(4 letters)" style="width:98px;height:32px;">
+                        <select name="month" style="width:98px;height:32px;">
+                          <option value="">month</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                      </select>
+                        <input id="day" type="text" autocomplete="off" placeholder="day" style="width:98px;height:32px;">
+                      </div>
+                      
+                      <div class="form-group">
+                        <select name="sex" style="width:300px;height:32px;">
+                          <option value="">sex</option>
+                          <option value="남자">male</option>
+                          <option value="여자">female</option>
+                          <option value="선택안함">secret</option>
+                      </select>
+                      </div>
+
+                      <div class="form-group">
+                        <select name="international_call" style="width:300px;height:32px;">
+                          <option value="">Korea +82</option>
+                          <option value="">France +33</option>
+                          <option value="">Australia +61</option>
+                          <option value="">New Zealand +64</option>
+                          <option value="">Mexico +52</option>
+                          <option value="">Germany +33</option>
+                          <option value="">America/Canada +1</option>
+                          <option value="">Japan +81</option>
+                      </select>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text"  id="phone" placeholder="PhoneNumber" autocomplete="off" style="width:140px;height:32px;">
+                        <button type="button" class="btn btn-info" id="verification" onclick="getCode();">Get a verification code</button>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text"  id="code" placeholder="Verification Code" autocomplete="off" style="width:300px;height:32px;">
+                      </div>
+
+
+                     
+                      
+
+                      <div class="checkbox">
+                    
+                            <input type="checkbox" id="cbx_chkAll" /> Agree all terms <br>
+                            <input type="checkbox" name="chk"> [필수] 개인정보 수집 및 이용 동의 <a href="../html/tos1.html" target="_blank" style="text-decoration: underline;"> 자세히</a> <br>
+                            <input type="checkbox" name="chk"> [필수] Ime, Ime 스토어 이용 악관 <a href="../html/tos2.html" target="_blank" style="text-decoration: underline;"> 자세히</a> <br>
+                            <input type="checkbox" name="chk"> [필수] 만 14세 미만 가입 제한 
+                           
+                      </div>
+                      <button type="button" id="submit" class="btn btn-default" 
+                       onclick="signUp();" style="width:300px;height:32px;">Submit</button>
+                      
+                      
+                </form>
+                <div class="signup">
+                    <span style="color:#0fb9df;">If you have account   </span> 
+                    <button type="button" class="btn btn-info" id="login" onclick="moveLogin();">Login</button>
+                </div>
+                
+            </div>	
+            
+        
+            <div class="container-fluid text-center col-sm-4 bg-5 ">
+            
+                
+                
+            </div>	
+        </div>
+    
+        
+        <div id="footer">
+          <div class="bottom_left"><br><h3>Developer Info</h3>
+              <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+              <br>Software department Junior <br>
+              studnetId:2018038077<br>
+              <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+              <br>Software department Junior <br>
+              studnetId:2018038048<br>
+              <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+              <br>Software department Junior <br>
+              studnetId:2018038072<br>
+          </div>   
+    
+          <div class="bottom_middle"><br><h3>Contact</h3>
+          <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+          <br>010-2693-XXXX<br>
+          </div>
+    
+          <div class="bottom_right"><br><h3>Customer Info</h3>
+            <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+            Friday :  09:00AM ~  05:00PM<br>
+            Break Time :  12:00PM ~ 01:00PM<br>
+            Closed on weekends/holidays</div>  
+        </div> 
+    
+</body>
+</html>

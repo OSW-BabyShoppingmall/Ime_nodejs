@@ -1,0 +1,123 @@
+     
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@100,200;1,200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,100;1,200&display=swap');
+          
+    
+    *{
+    padding:0;
+    margin:0;
+    font-family:'Nunito','sans-serif';
+    }
+    ul{
+    list-style:none;
+    font-weight:700;
+    }
+    
+    
+    
+    .wrapper{
+        background-color:#f1f3f5;
+        overflow:hidden;
+    }
+    
+    /* 상단메뉴바에대한 속성들(시작)*/
+
+.menuicon{
+    font-size:10px;
+}
+
+
+.navbar-nav  li a:hover{
+    color: #FF87D2 !important;
+}
+
+.logoimg{
+    padding-top:100px;
+    padding-bottom:80px;
+}
+
+.logoimg #textlogo{
+    width: 180px;
+    height: 80px;
+}
+
+/*상단메뉴바에대한 속성들(끝)*/
+    
+    
+    a{
+    text-decoration:none;
+    }
+    #header{
+        overflow:hidden;
+    }
+
+    
+    
+    .logoimg{
+        padding-top:100px;
+        padding-bottom:80px;
+    }
+    
+    .logoimg #textlogo{
+        width: 180px;
+        height: 80px;
+    }
+    
+    
+    /*헤더의 이미지파일들에 관한 속성들(끝)*/
+    
+.top p{
+    padding-top: 250px;
+    text-align: center;
+    font-size: 90px;
+}
+
+body{
+    background-color: #f1f3f5;
+}
+
+.mainboard{
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.mainboard h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.mainboard td, th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.mainboard td:hover{
+    text-decoration: underline #e283a3;
+}
+.bottom{
+    margin-top: 10px;
+    text-align: center;
+}
+.bottom a{
+    text-decoration: none;
+}
+
+    /*footer에 관한 속성들(시작)*/
+
+    #footer{
+        clear:both;
+        background-color:#f1f3f5;
+        display:flex;
+        }
+        
+        .bottom_left{
+            width:40%;
+        }
+        .bottom_middle{
+            width:40%;
+        }
+        .bottom_right{
+            width:20%;
+            
+        }
+        
+        /*footer에 관한 속성들(끝)*/

@@ -12,6 +12,10 @@ const handleListening = () => {
     console.log(`Listening on: http://localhost:${PORT}`)
 }
 
+app.use(express.static("public"));
+app.listen(3000, handleListening);
+
+
 /*
 var server = http.createServer(function (request, response) {
     switch (request.url) {
@@ -28,32 +32,37 @@ var server = http.createServer(function (request, response) {
 
 */
 
-app.use(express.static("public"));
 
+/*
 app.get('/', function(req,res){
   fs.readFile('./public/index.html',function(error,data){
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+    res.end(data);
+  });
+});*/
+
+
+
+/*
+app.get('/notice', function(req,res){
+  fs.readFile('./public/html/notice.html',function(error,data){
     res.writeHead(200, {'Content-Type' : 'text/html'});
     res.end(data);
   });
 });
 
 app.get('/notice', function(req,res){
-  fs.readFile('./public/index.html',function(error,data){
-    res.writeHead(200, {'Content-Type' : 'notice/html'});
+  fs.readFile('./public/html/notice.html',function(error,data){
+    res.writeHead(200, {'Content-Type' : 'text/html'});
     res.end(data);
   });
 });
 
-app.get('/notice', function(req,res){
-  fs.readFile('./public/index.html',function(error,data){
-    res.writeHead(200, {'Content-Type' : 'qna/html'});
-    res.end(data);
-  });
-});
+*/
 
 
 
-app.listen(3000, handleListening);
+
 
 
 

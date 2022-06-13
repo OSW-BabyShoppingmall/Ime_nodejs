@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/shopping_basket.css">
+  <script src="../js/shopping_basket.js"></script>
+  <script src="../js/greeting.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid menubar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo2-removed.png" alt="" width="70px;"
+                height="35px;"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class=""><a href="../index.html"><span class="menuicon glyphicon glyphicon-home"></span> Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span class="menuicon glyphicon glyphicon-usd"></span> Items
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../html/Cool.html"><span class="menuicon glyphicon glyphicon-sunglasses"></span> Cool</a></li>
+                  <li><a href="../html/warm.html"><span class="menuicon glyphicon glyphicon-fire"></span> Warm</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span class="menuicon glyphicon glyphicon-headphones"></span> Service Center
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../html/notice.html"><span class="menuicon glyphicon glyphicon-bullhorn"></span>
+                      Notice</a></li>
+                  <li><a href="../html/qna.html"><span class="menuicon glyphicon glyphicon-question-sign"></span>
+                      Q&A</a></li>
+                  <li><a href="../html/map.html"><span class="menuicon glyphicon glyphicon-map-marker"></span> Map</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span class="menuicon glyphicon glyphicon-user"></span> Account
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../html/login.html"><span class="menuicon glyphicon glyphicon-log-in"></span> Log in</a>
+                  </li>
+                  <li><a href="../html/signup.html"><span class="menuicon glyphicon glyphicon-new-window"></span> Sign
+                      up</a></li>
+                  <li><a href="../html/shopping_basket.html"><span
+                        class="menuicon glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+
+                </ul>
+              </li>
+              <li><a href="#" id="welcomename" style="display:none;"></a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid text-center logoimg">
+
+
+        <ul>
+          <li> <a href="../index.html">
+              <img src="../img/textlogo.png" id="textlogo">
+              <img id="logo" src="../img/logo2-removed.png">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="col-sm-1"></div>
+      <div class="container col-sm-10">
+        <div id="list">
+          <table class="table">
+            <h2 style="padding-top: 25px; padding-bottom:25px;">Cloth lists</h2>
+            <tbody>
+              <tr>
+                <td>Choose</td>
+                <td>Product info</td>
+                <td>Price</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_1" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_1</p>
+                </td>
+                <td>1$</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_2" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_2</p>
+                </td>
+                <td>1$</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_3" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_3</p>
+                </td>
+                <td>1$</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_4" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_4</p>
+                </td>
+                <td>1$</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_5" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_5</p>
+                </td>
+                <td>1$</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" class="cloth1_6" onclick="get(this)"></td>
+                <td>
+                  <p>cloth1_6</p>
+                </td>
+                <td>1$</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-block">Open shopping Basket </button>
+
+          <div id="basket" class="container col-sm-12 collapse">
+            <button class="btn btn-block">Close shopping Basket </button>
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>Image</td>
+                  <td>Product info</td>
+                  <td>option</td>
+                  <td>Price</td>
+                  <td>Amount</td>
+                </tr>
+              </thead>
+              <tbody class="cloth1">
+
+              </tbody>
+
+
+              <tfoot class="col-sm-4 offset-sm-8">
+                <tr>
+                  <td>Prodcuts Price:</td>
+                  <td class="product_price">0</td>
+                </tr>
+                <tr>
+                  <td>Delivery Price:</td>
+                  <td class="delivery_price">10</td>
+                </tr>
+                <tr>
+                  <td>Total Price:</td>
+                  <td class="total_price">0</td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="order">
+              <h3>Choose pay method</h3>
+              <img src="../img/naverpay.jpg" class="btn btn-outline-success">
+              <img src="../img/kakaopay.png" class="btn btn-outline-warning">
+              <img src="../img/payco.jpg" class="btn btn-outline-danger">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <div class="bottom_left"><br>
+        <h3>Developer Info</h3>
+        <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="../img/github.png"
+            width="20px" height="20px"></a>
+        <br>Software department Junior <br>
+        studnetId:2018038077<br>
+        <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="../img/github.png"
+            width="20px" height="20px"></a>
+        <br>Software department Junior <br>
+        studnetId:2018038048<br>
+        <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="../img/github.png" width="20px"
+            height="20px"></a>
+        <br>Software department Junior <br>
+        studnetId:2018038072<br>
+      </div>
+
+      <div class="bottom_middle"><br>
+        <h3>Contact</h3>
+        <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+        <br>010-2693-XXXX<br>
+      </div>
+
+      <div class="bottom_right"><br>
+        <h3>Customer Info</h3>
+        <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+        Friday : 09:00AM ~ 05:00PM<br>
+        Break Time : 12:00PM ~ 01:00PM<br>
+        Closed on weekends/holidays
+      </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+</div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Notice</title>
+    <link rel="stylesheet" href="../css/noticeqna.css">
+    <script src="../js/greeting.js"></script>
+    <style>
+        .top {
+            background-image: url(../img/kids6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            color: white;
+        }
+
+        .mainboard td {
+            border-bottom: 1px solid #e283a3;
+        }
+
+        .bottom a,
+        a:visited {
+            color: #e283a3;
+        }
+    </style>
+</head>
+<script>
+    function func1() {
+        if (document.getElementById("popup").style.display == "block") { document.getElementById("popup").style.display = "none"; }
+        else { document.getElementById("popup").style.display = "block"; }
+    }
+</script>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid menubar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../index.html"><img src="../img/logo2-removed.png" alt=""
+                                width="70px;" height="35px;"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class=""><a href="../index.html"><span class="menuicon glyphicon glyphicon-home"></span>
+                                    Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="menuicon glyphicon glyphicon-usd"></span> Items
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../html/Cool.html"><span class="menuicon glyphicon glyphicon-sunglasses"></span>
+                                            Cool</a></li>
+                                    <li><a href="../html/warm.html"><span
+                                                class="menuicon glyphicon glyphicon-fire"></span> Warm</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="menuicon glyphicon glyphicon-headphones"></span> Service Center
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../html/notice.html"><span
+                                                class="menuicon glyphicon glyphicon-bullhorn"></span> Notice</a></li>
+                                    <li><a href="../html/qna.html"><span
+                                                class="menuicon glyphicon glyphicon-question-sign"></span> Q&A</a></li>
+                                    <li><a href="../html/map.html"><span
+                                                class="menuicon glyphicon glyphicon-map-marker"></span> Map</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="menuicon glyphicon glyphicon-user"></span> Account
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../html/login.html"><span
+                                                class="menuicon glyphicon glyphicon-log-in"></span> Log in</a></li>
+                                    <li><a href="../html/signup.html"><span
+                                                class="menuicon glyphicon glyphicon-new-window"></span> Sign up</a></li>
+                                    <li><a href="../html/shopping_basket.html"><span
+                                                class="menuicon glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" id="welcomename" style="display:none;"></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="container-fluid text-center logoimg">
+
+
+                <ul>
+                    <li> <a href="../index.html">
+                            <img src="../img/textlogo.png" id="textlogo">
+                            <img id="logo" src="../img/logo2-removed.png">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="top">
+                <p>Notice</p>
+            </div>
+
+            <div class="mainboard">
+                <table class="table table-striped" style="width: 100%;">
+                    <caption>
+                        <h1>Notice lists</h1>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Title</th>
+                            <th>writer</th>
+                            <th>draw date</th>
+                            <th>views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div id="accordion">
+                            <div class="card">
+                                <tr class="card-header" id="headingOne">
+                                    <td>1</td>
+                                    <td class="collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        For summer comming, we have events for warm category!
+                                    </td>
+                                    <td>Manager</td>
+                                    <td>2022-05-06</td>
+                                    <td>999</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                            data-parent="#accordion">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3
+                                            wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa
+                                            nesciunt laborum
+                                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                            single-origin coffee nulla
+                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                            wes
+                                            anderson cred
+                                            nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings
+                                            occaecat craft beer
+                                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                                            of
+                                            them accusamus
+                                            labore sustainable VHS.
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <td>2</td>
+                                            <td class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Announce that delivery delay cause of workout
+                                            </td>
+                                            <td>Manager</td>
+                                            <td>2022-03-17</td>
+                                            <td>999</td>
+                                        </h5>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3
+                                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                truck
+                                                quinoa nesciunt laborum
+                                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla
+                                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                                labore
+                                                wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer
+                                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                                heard
+                                                of them accusamus
+                                                labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <td>3</td>
+                                            <td class="collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Greeeting for the new year
+                                            </td>
+                                            <td>Manager</td>
+                                            <td>2022-05-06</td>
+                                            <td>999</td>
+                                        </h5>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3
+                                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                truck
+                                                quinoa nesciunt laborum
+                                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla
+                                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                                labore
+                                                wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer
+                                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                                heard
+                                                of them accusamus
+                                                labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <div class="card-header" id="headingFour">
+                                        <h5 class="mb-0">
+                                            <td>4</td>
+                                            <td class="collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                About our shopping mall
+                                            </td>
+                                            <td>Manager</td>
+                                            <td>2022-11-13</td>
+                                            <td>999</td>
+                                        </h5>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3
+                                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                truck
+                                                quinoa nesciunt laborum
+                                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla
+                                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                                labore
+                                                wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer
+                                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                                heard
+                                                of them accusamus
+                                                labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <div class="card-header" id="headingFive">
+                                        <h5 class="mb-0">
+                                            <td>5</td>
+                                            <td class="collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Baby cloth shopping mall Ime approached!
+                                            </td>
+                                            <td>Manager</td>
+                                            <td>2022-11-13</td>
+                                            <td>999</td>
+                                        </h5>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3
+                                                wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                                truck
+                                                quinoa nesciunt laborum
+                                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                                single-origin coffee nulla
+                                                assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer
+                                                labore
+                                                wes anderson cred
+                                                nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                                Leggings occaecat craft beer
+                                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+                                                heard
+                                                of them accusamus
+                                                labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+                <div class="bottom">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="bottom_left"><br>
+                    <h3>Developer Info</h3>
+                    <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img
+                            src="../img/github.png" width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+                    studnetId:2018038077<br>
+                    <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img
+                            src="../img/github.png" width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+                    studnetId:2018038048<br>
+                    <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="../img/github.png"
+                            width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+                    studnetId:2018038072<br>
+                </div>
+
+                <div class="bottom_middle"><br>
+                    <h3>Contact</h3>
+                    <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+                    <br>010-2693-XXXX<br>
+                </div>
+
+                <div class="bottom_right"><br>
+                    <h3>Customer Info</h3>
+                    <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+                    Friday : 09:00AM ~ 05:00PM<br>
+                    Break Time : 12:00PM ~ 01:00PM<br>
+                    Closed on weekends/holidays
+                </div>
+            </div>
+</body>
+
+</html>

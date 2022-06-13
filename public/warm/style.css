@@ -1,0 +1,256 @@
+.page1 { position:fixed;top:0;left:0;    /*벽에 딲 붙이기 위해 fixed */
+ width:100%; height:100%; background:#F66;
+}
+.screenfence{
+  position: fixed; top:0;left:0;  /*벽에 딲 붙이기 위해 fixed */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  visibility: hidden;
+
+}
+.page2 { position:fixed; top:0; left:0; /*벽에 딲 붙이기 위해 fixed */
+ height:200px;
+  width:100%;
+  height:100%;
+visibility:hidden;}
+#exitbutton{
+  position: fixed; right:20px; top:10px;
+  margin-top: 5px;
+  margin-left: -100px;
+  width: 30px;
+  height:30px;
+}
+
+table td{
+  background-color: white;
+}
+table td div{
+  width:350px;
+  height: 350px;
+  text-align: center;
+}
+table td div img{
+  width: 100%;
+  height: 100%;
+}
+table{
+  border-spacing: 30px;
+}
+
+button img{
+  width: 45px;
+  height:45px;
+  margin-left: -9px;
+  margin-top:-4px;
+}
+button.pagemove{
+  border:none;
+  width: 40px;
+  height:40px;
+  border-radius: 20px;
+}
+button.pagemove:hover{
+  background-color: #c0c0c0;
+}
+div.left{
+  clear:both;
+  float:left;
+  background-color: black;
+  width: 65%;
+  height: 100%;
+}
+div.right{
+  float:left;
+  background-color: white;
+  width: 35%;
+  height: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%; overflow:hidden;
+    position:relative;
+}
+
+.slider img {
+    width: 0%;
+    height:0%;
+}
+.slick-prev { position:absolute; z-index:999; top:50%; left:5%; border:0; padding:10px;background-image: url("../cool.img/leftarrow1.png"); box-shadow:0 0 10px rgba(255,255,255,0.8);
+color:rgba(0,0,0,0); width: 40px; height: 40px; border-radius: 20px; margin-left: -20px; margin-top: -10px;
+  }
+.slick-next { position:absolute; z-index:999; top:50%; right:5%; border:0; padding:10px;background-image: url("../cool.img/rightarrow1.png"); box-shadow:0 0 10px rgba(255,255,255,0.8);
+color:rgba(0,0,0,0); width: 40px; height: 40px; border-radius: 20px; margin-right: -20px; margin-top: -10px;}
+
+
+
+/*상우가준것*/
+div.header{
+  width: 100%;
+  height:300px;
+}
+#footer{
+    clear:both;
+    background-color:#f1f3f5;
+    display:flex;
+    }
+
+    .bottom_left{
+        width:40%;
+    }
+    .bottom_middle{
+        width:40%;
+    }
+    .bottom_right{
+        width:20%;
+
+    }
+    .menubar{
+       width:100%;
+       position:fixed;
+       z-index:1;
+       }
+
+
+
+   .top_left{
+       margin-top:100px;
+       display:flex;
+       justify-content: center;
+   }
+
+   .top_right{
+   float:right;
+   width:30%;
+   text-align:center;
+   }
+   .top_right ul{
+   display:inline-flex;
+   }
+   .top_right ul li{
+   width:120px;
+   padding:15px;
+   }
+   .top_right ul li a{
+   color:black;
+   text-decoration:none;
+
+   }
+
+   .sub-menu{
+   display:none;
+   margin-top:10px;
+
+   }
+   .top_right ul li:hover  .sub-menu{
+   display:block;
+   position:absolute;
+   }
+   .top_right ul li:hover .sub-menu ul{
+   display:block;
+   }
+   .top_right ul li:hover .sub-menu ul li{
+   padding-right:0px;
+   padding-left:0px;
+   padding-top:10px;
+
+   }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@100,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,100;1,200&display=swap');
+
+
+*{
+padding:0;
+margin:0;
+font-family:'Nunito','sans-serif';
+}
+#header ul{
+list-style:none;
+font-weight:700;
+}
+
+
+
+.wrapper{
+   background-color:#f1f3f5;
+   overflow:hidden;
+}
+#header{
+       overflow:hidden;
+}
+
+img#logo{
+  width:180px;
+  height:120px;
+}
+
+img#textlogo{
+  width:200px;
+  height:80px;
+}
+.top_left a{
+    text-decoration:none;
+    }
+    /*상우가준것 */
+
+
+#itemName
+{
+  font-size:40px;
+  font-weight: 500;
+}
+.itemInfo1
+{
+  font-size: 25px;
+  color:#696969;
+}
+
+.itemInfo2
+{
+  font-size: 20px;
+  color:#696969;
+}
+.oneKindItemPrice
+{
+  display:inline-block;  margin: 5px; padding-top:5px;  float:right;
+}
+.oneKindItem{
+  display:inline-block; margin: 5px;  padding: 3px; padding-left: 5px; padding-right: 7px; background-color:#848484; color:white; height:24px;
+  margin-right: 150px;
+  border-radius: 3px;
+}
+.inputNum
+{
+  width: 60px;
+}
+.oneKindItemPrice
+{
+
+  margin-top: 3px;
+  color:#696969;
+}
+.removeImg
+{
+  padding-left: 5px;
+  width:14px;
+  height: 14px;
+}
+.RightBuyingButton
+{
+  width:100px;height:50px; font-size: 20px;
+  background-color:#4d4646; color:white;
+  margin-left: 5px;
+}
+.RightBuyingButton:hover
+{
+  background-color:#e3e4e1;
+  border:1px solid black;
+  color:black;
+}
+.CartButton
+{
+  width:100px;height:50px; font-size: 20px;
+}

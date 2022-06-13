@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CoolPage</title>
+
+  <link href="../cool/slick.css" rel="stylesheet">
+  <link href="../cool/style.css" rel ="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../cool/slick.js"></script>
+  <script src="../cool/jquery.easing.js"></script>
+  <script src="../cool/cool.js"></script>
+<style>
+
+</style>
+
+
+</head>
+<body style="background-color:#f1f3f5">
+<div class="header">
+  <div class="wrapper">
+
+            <div id="header">
+
+                <div class="menubar">
+
+
+
+
+                            <div class="top_right">
+
+                                <ul>
+                                    <li>Items
+                                        <div class="sub-menu">
+                                            <ul>
+                                                <li><a href="../html/Warm.html">Warm</a></li>
+                                                <li><a href="../html/Cool.html">Cool</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Service Center
+                                        <div class="sub-menu">
+                                            <ul>
+                                                <li><a href="../html/notice.html">Notice</a></li>
+                                                <li><a href="../html/qna.html">Q&A</a></li>
+                                                <li><a href="../html/map.html">Map</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>Account
+                                        <div class="sub-menu">
+                                            <ul>
+                                                <li><a href="../html/login.html">Log In</a></li>
+                                                <li><a href="../html/signup.html">Sign Up</a></li>
+                                                <li><a href="../html/shopping_basket.html">Cart</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                </div>
+
+                <div class="top_left">
+
+
+                    <ul>
+                        <li> <a href="../index.html"><img src="../img/textlogo.png" id="textlogo" >
+                            <img id="logo" src="../img/logo2-removed.png">
+                            </a>
+                        </li>
+
+                        </ul>
+
+                </div>
+                </div>
+</div>
+</div>
+
+<div class="table" >
+    <div style="width:19%; float:left; visibility:hidden;">정렬용</div>
+    <div  style="float:left;">
+      <table style=" float:left;">
+        <script>
+        for(var j=0;j<5;j++){
+          document.write('<tr>');
+          for(var i=1; i<4; i++){
+            document.write('<td><div><a href="#" onclick="return false"><img src="../cool.img/cloth'+(3*j+i)+'_'+1+'.png" onmousedown="showPage2('+(3*j+i)+')"/></a></div></td>');
+          }//showpage2할떄 k=3*j+i가되도록. ,k_i로되도록  //showapge2가 눌러지면 아이템리스트를 생성하도록
+          document.write('</tr>');
+        }
+        </script>
+    </table>
+  </div>
+</div>
+
+
+<div class="screenfence"></div>
+
+<div class="page2">
+  <a href="#" onclick="return false"><img id="exitbutton" src="../cool.img/exit.png" onclick="Exit()"/></a>
+    <div style="width:10%; margin-top: 25%; float:left;  display:inline-block;">
+       <button class="pagemove"style="margin-left:35%;"><a href="#" onclick="return false"><img src="../cool.img/leftarrow.png" onclick="PageMove('left')"></a>
+       </button>
+    </div>
+
+    <div style=" float:left;  margin-left:6%; margin-top: 2.5%; background-color: white; width:70%; height:90%; display:inline-block;">
+
+      <div class="left">
+        <div class="slider single-item" id="slideritem">
+          <img class="imageitem" src="refer to showPage2 of JavaScript" alt="img">
+          <img class="imageitem" src="refer to showPage2 of JavaScript" alt="img">
+          <img class="imageitem" src="refer to showPage2 of JavaScript" alt="img">
+          <img class="imageitem" src="refer to showPage2 of JavaScript" alt="img">
+          <img class="imageitem" src="refer to showPage2 of JavaScript" alt="img">
+
+        </div>
+      </div>
+      <div class="right">
+        <form>
+          <h2 id="itemName">물품 이름</h2><hr>
+          <code class="itemInfo1">
+          <br><p>판매가 : &nbsp &nbsp &nbsp &nbsp<code id="price">5000원</code></p>
+          <br><p style="font-size:20px;">배송비 : &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 2500원</p><br>
+          </code>
+          <hr>
+          <code class="itemInfo2">
+          <br>
+          <p>색상 :&nbsp &nbsp
+              <select style="width:70%; height:40px;" onchange="colorSelectFunc()">
+                      <option class="colorSelect" value="" selected="true">-[필수] 색상 선택 -</option>
+                      <option class="colorSelect" value="101호">101호</option>
+                      <option class="colorSelect" value="102호">102호</option>
+                      <option class="colorSelect" value="103호">103호</option>
+              </select>
+          </p>
+          <br>
+          <p>사이즈 :&nbsp
+              <select style="width:70%; height:40px;" onchange="sizeSelectFunc()">
+                      <option class="sizeSelect" value="" selected="true">-[필수] 사이즈 선택 -</option>
+                      <option class="sizeSelect" value="S">S</option>
+                      <option class="sizeSelect" value="L">L</option>
+              </select>
+          </p>
+          </code>
+
+            <br>
+
+            <div class="AddItem">
+            </div>
+
+
+            <hr>
+            <br>
+            <div style="float:right; font-size:25px; ">Total :&nbsp
+              <div class="totalPrice" style="float:right; ">0원</div>
+            </div>
+
+
+            <div style="clear:both;">
+              <a href="../html/login.html"><input class="RightBuyingButton" type="button" value="바로구매"></a>
+              <a  href="../html/shopping_basket.html"><input class="CartButton" type="button" value="장바구니"></a>
+            </div>
+        </form>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+    <div style="width:10%; margin-top: 25%; float:left;  display:inline-block;">
+      <button class="pagemove"style="margin-left:35%;"><a href="#" onclick="return false"><img src="../cool.img/rightarrow.png" onclick="PageMove('right')"></a>
+      </button>
+    </div>
+</div>
+<div id="footer">
+
+
+
+
+                <div class="bottom_left"><br><h3>Developer Info</h3>
+                    <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+                    <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+                    <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+                    <br>Software department Junior <br>
+
+                </div>
+
+
+                <div class="bottom_middle"><br><h3>Contact</h3>
+                <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+                <br>010-2693-XXXX<br>
+                <br><a href="#" style="background-color:aliceblue;">How to visit</a></div>
+
+
+                <div class="bottom_right"><br><h3>Custmoer Info</h3>
+                  <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+                  Friday :  09:00AM ~  05:00PM<br>
+                  Break Time :  12:00PM ~ 01:00PM<br>
+                  Closed on weekends/holidays</div>
+
+
+
+              </div>
+
+
+
+
+
+<script>
+
+$('.single-item').slick({ //이미지 넘길때 잔상효과 나오게하는 제이쿼리
+  autoplaySpeed:5000,
+  fade:true,
+  cssEase:"ease",
+  easing:"ease",
+});
+
+
+  </script>
+</body>
+</html>

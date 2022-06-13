@@ -5,217 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Shoppingmall</title>
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/greeting.js"></script>
+
+
+  </head>
 <body>
+  
 
     
+
 
 <div class="wrapper">
 
     <div id="header">
 
-        <div class="menubar">
 
-            
-            
-
-                    <div class="top_right">
-                            
-                        <ul>
-                            <li>Items
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="Warm.html">Warm</a></li>
-                                        <li><a href="#">Cool</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>Service Center
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="notice.html">Notice</a></li>
-                                        <li><a href="qna.html">Q&A</a></li>
-                                        <li><a href="#">Review</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>Account
-                                <div class="sub-menu">
-                                    <ul>
-                                        <li><a href="#">Log In</a></li>
-                                        <li><a href="#">Sign Up</a></li>
-                                    </ul>
-                                </div>
-                            </li>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid menubar">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo2-removed.png" alt="" width="70px;" height="35px;"></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="index.html"><span class="menuicon glyphicon glyphicon-home"></span> Home</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <span class="menuicon glyphicon glyphicon-usd"></span> Items
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="html/Cool.html"><span class="menuicon glyphicon glyphicon-sunglasses"></span> Cool</a></li>
+                          <li><a href="html/Warm.html"><span class="menuicon glyphicon glyphicon-fire"></span> Warm</a></li>
                         </ul>
-
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <span class="menuicon glyphicon glyphicon-headphones"></span> Service Center
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="html/notice.html"><span class="menuicon glyphicon glyphicon-bullhorn"></span> Notice</a></li>
+                          <li><a href="html/qna.html"><span class="menuicon glyphicon glyphicon-question-sign"></span> Q&A</a></li>
+                          <li><a href="html/map.html"><span class="menuicon glyphicon glyphicon-map-marker"></span> Map</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          <span class="menuicon glyphicon glyphicon-user"></span> Account
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="html/login.html"><span class="menuicon glyphicon glyphicon-log-in"></span> Log in</a></li>
+                          <li><a href="html/signup.html"><span class="menuicon glyphicon glyphicon-new-window"></span> Sign up</a></li>
+                          <li><a href="html/shopping_basket.html"><span class="menuicon glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                        </ul>
+                      </li>
+                      <li ><a href="#" id="welcomename" style="display:none;"></a></li>
+                    </ul>
                     
-                    </div>
-    
-        </div>
+                  </div>
+                </div>
+              </nav>
+              
 
-        <div class="top_left">
+        <div class="container-fluid text-center logoimg">
             
 
             <ul> 
-                <li> <a href="index.html"><img src="img/textlogo.png" id="textlogo">
+                <li> <a href="index.html">
+                    <img src="img/textlogo.png" id="textlogo">
                     <img id="logo" src="img/logo2-removed.png">
                     </a> 
                 </li> 
                 </ul>
 
         </div>
-
         
-    
-        
-        <div class="imagecontainer">
-                
-            <div class="image">
-            </div>
-        
-            <div class="image" style="background-image:url('img/kids3.jpg')">
-            </div>
-            
-            <div class="image" style="background-image:url('img/kids5.jpg')">
-            </div>
-            
-            <div class="image" style="background-image:url('img/kids6.jpg')">
-            </div>  
-
-                   
-            
-        </div>
-
-        <div class="radiowrap">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-        </div>
 
       
-        <br>
-        <br>
+
+        
+    </div>
+    
+        
        
-
-        
-        <script>
-
-            
-            var move=true;
-            var counter = 2;
-
-            document.getElementById('radio1').checked=true;
-            if(move){
-                console.log("inner"+move);
-            setInterval(function(){
-
-            var radioid=document.getElementById('radio' + counter);
-            radioid.checked = true;
-            document.querySelector('.imagecontainer').style.transform=`translate(${(counter-1)*(-100)}vw)`;
-            
-            counter++;
-            if(counter > 4){
-                counter = 1;
-            }
-            }, 3500);
-        }
-       
-
-            document.querySelector('#radio1').addEventListener('click' ,function() {
-                document.querySelector('.imagecontainer').style.transform='translate(+0vw)';
-            });
-            document.querySelector('#radio2').addEventListener('click' ,function() {
-                document.querySelector('.imagecontainer').style.transform='translate(-100vw)';
-            });
-            document.querySelector('#radio3').addEventListener('click' ,function() {
-                document.querySelector('.imagecontainer').style.transform='translate(-200vw)';
-            });
-            document.querySelector('#radio4').addEventListener('click' ,function() {
-                document.querySelector('.imagecontainer').style.transform='translate(-300vw)';
-            });
-            document.querySelector('#radio5').addEventListener('click' ,function() {
-                document.querySelector('.imagecontainer').style.transform='translate(-400vw)';
-            });
-        
-            
-        
-        </script>
-
-  </div>
-   
 
 
     <div class="content">
+
+        <div class="cycle-slideshow"
+        data-cycle-loader=true
+        data-cycle-fx=scrollHorz
+        data-cycle-timeout=2700
+        >
+
+
         
-        
+            <img class="img-fluid" src="img/kids23.jpg" width="100%" height="auto">
+            <img class="img-fluid" src="img/kids.jpg" width="100%" height="90%">
+            <img class="img-fluid" src="img/kids22.jpg" width="100%" height="auto">
+            
+            <img class="img-fluid" src="img/kids13.jpg" width="100%" height="auto">
+
+            <!-- empty element for pager links -->
+            <div class="cycle-pager"></div>
+
+        </div>
+       
+
+
         <div class="categoryimage">
 
-            <div class="coolwrapper">
-                <div class="mainimage">
-                    <img class="mainimage__img" src="img/kids11.jpg" alt="Bricks">
-                    <div class="mainimage__overlay coolimage__overlay--primary">
-                        <div class="mainimage__title"><a id="coolanchor" href="cool.html">Cool</a></div>
-                    
-                    
-                    </div>
 
+              <br> <br> <br> <br> <br> <br>
                 
-                </div>
-                <div class="coolimage_description">
-                    Not a hot summer, but a pleasant, <br> &nbsp; &nbsp; cool, refreshing summer
-                </div>
-      
+              
+             
+              <div class="mainimage">
+                  <img class="mainimage__img img-responsive" src="img/kids11.jpg" alt="Bricks">
+                  <div class="mainimage__overlay coolimage__overlay--primary">
+                      <div class="mainimage__title"><a id="coolanchor" href="html/Cool.html">Cool</a></div>
+                  
+                  
+                  </div>
+
+              
+              </div>
+              <div class="coolimage_description">
+                  Not a hot summer, but a<br> <span style="color:#0addb3;">pleasant,</span> <span class="text-primary"> cool,</span> 
+                  <span style="color:#0addb3;">refreshing</span><br>  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;   summer
+              </div>
+              
+
+              <br> <br> <br> <br> <br> <br>
             
-     
-            
-            </div>
-            <br>
-            <br>
-
-            <div class="warmwrapper">
-
-
-                <div class="warmimage_description">
-                    Feel the softness and warmness
-                    <br> 
-                        &nbsp; &nbsp; &nbsp;  of the moment you touch
-                </div>
-            
-                <div class="warmimage">
-                    <img class="mainimage__img" src="img/kids10.jpg" alt="Bricks">
-                    <div class="mainimage__overlay warmimage__overlay--primary">
-                        <div class="mainimage__title"><a id="warmanchor" href="Warm.html">Warm</a></div>
-                    </div>
-
-
-                   
-                    
-                </div>
-                
-            </div>
-
-
-            
-            
-           
- 
-        </div>
-
-
-        <div class="blank"></div>
+              
+              <div class="warmimage_description">
+                Feel the <span style="color:#ecec34;">softness</span> and <span style="color:#FF3399;">warmness</span>
+                <br> 
+                    &nbsp; &nbsp; &nbsp;   of the moment you touch
+              </div>
         
-        <script>
-            function Createblanks() {
-                var blank=document.getElementsByClassName('blank')[0];
-                blank.innerHTML="<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"
-            }
-            Createblanks();
-        </script>
-    
-        <hr>
+              <div class="warmimage">
+                  <img class="mainimage__img img-responsive" src="img/kids10.jpg" alt="Bricks">
+                  <div class="mainimage__overlay warmimage__overlay--primary">
+                      <div class="mainimage__title"><a id="warmanchor" href="html/Warm.html">Warm</a></div>
+                  </div>
+  
+  
+               
+                
+              </div>
+              
+            
+
+            
+
+            
+
+            
+            
+              
+          
+        
+
+              
+              
+
+        </div>
+        
+        
+        
+
+
+      
 
         
 
@@ -226,50 +200,96 @@
 
 
       <div class="infowrapper">
-        <div class="infoimage">
-            <img src="img/kids8.jpg" style="height:600px;">
-        </div>
+
+        <br> <br> <br> <br> <br> <br>
+        
+           <hr style="border:1px solid black; width: 100% !important;">
+            
+            <div class="infoimage">
+                <img src="img/kids8.jpg" style="height:600px;" class="img-responsive">
+            </div>
+            <button type="button" id="infobtn" class="btn btn-info btn-lg">click me to show website information</button>
        
-        <div class="infodescription">
+            <div class="infodescription" style="display:none;">
             
-            <p style="font-size:100px;">Ime</p>
+                <p style="font-size:100px;">I<span class="glyphicon glyphicon-heart"id="heart"></span>me</p>
 
-            <p style="font-size:20px;"><b>shopping for my child</b></p>
-            <br>
-            <br>
-            <br>
-            <br>
+                <p style="font-size:20px;"><b>shopping for my child</b></p>
+                <br>
+                <br>
+                <br>
+                <br>
             
 
 
-            Ime is an infant shopping mall website.<br>
-            We sell cool and warm clothes.<br>
-                Unlike traditional shopping mall websites, <br>
-                We threw away the complicated screen composition.<br>
-                Through this, customers can easily access the items<br>
-                and be able to purchase easily.<br>
-                There are various clothes, so feel free to look around!!
+                Ime is an infant shopping mall website.<br>
+                We sell cool and warm clothes.<br>
+                    Unlike traditional shopping mall websites, <br>
+                    We threw away the complicated screen composition.<br>
+                    Through this, customers can easily access the items<br>
+                    and be able to purchase easily.<br>
+                    There are various clothes, so feel free to look around!!
             </div>
 
-    </div> 
-    <hr>
-</div> 
+        </div> 
+        <hr style="border:1px solid black; width: 100% !important;">
 
-    
+        <div class="container-fluid text-center bg-3">
+          <h3>Who are we?</h3>
+          <div class="row">
+            <div class="image-frame col-sm-4" id="image-frame1">
+              <img src="img/profile1.png" class="img-responsive" width="350px;">
+              <div class="image-caption" id="image-caption1">
+                <p>Hi~ My name is <strong>Park Doyoung.</strong><br> I am a leader of team unity.<br>
+                I created product pages like cool/warm</p>
+              </div>
+              </div>
+            
+            
+              <div class="image-frame col-sm-4" id="image-frame2">
+                <img src="img/profile2.png" class="img-responsive" width="350px;">
+                <div class="image-caption" id="image-caption2">
+                  <p>Hi~ My name is <strong>Hwang Seoungmun.</strong><br>
+                    I created Q&A, Notice, Cart pages <br>and also Google map function</p>
+                  </div>
+                </div>
+            
+            
+                <div class="image-frame col-sm-4" id="image-frame3">
+                  <img src="img/profile3.png" class="img-responsive" width="350px;">
+                  <div class="image-caption" id="image-caption3" >
+                    <p>Hi~ My name is <strong>Rim Sangwoo</strong><br>
+                      I created Main, Login, Signup pages</p>
+                  </div>
+                  
+          </div>        
+        </div>
+
+
+        
+
+    </div> 
+
+   
 
     
     <div id="footer">
-      
-        
 
+    
+      
+      
+      
       
       <div class="bottom_left"><br><h3>Developer Info</h3>
           <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
           <br>Software department Junior <br>
+          studnetId:2018038077<br>
           <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
           <br>Software department Junior <br>
+          studnetId:2018038048<br>
           <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="img/github.png" width="20px" height="20px"></a>
           <br>Software department Junior <br>
+          studnetId:2018038072<br>
           
       </div>
           
@@ -277,19 +297,20 @@
       <div class="bottom_middle"><br><h3>Contact</h3>
       <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
       <br>010-2693-XXXX<br>
-      <br><a href="#" style="background-color:aliceblue;">How to visit</a></div>
+      </div>
+     
 
 
-      <div class="bottom_right"><br><h3>Custmoer Info</h3>
+      <div class="bottom_right"><br><h3>Customer Info</h3>
         <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
         Friday :  09:00AM ~  05:00PM<br>
         Break Time :  12:00PM ~ 01:00PM<br>
         Closed on weekends/holidays</div>
       
-
+       
       
     </div>
-
+    
 
 </div>
     

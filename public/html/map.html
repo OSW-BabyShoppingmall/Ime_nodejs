@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/map.css">
+    <script src="../js/map.js"></script>
+    <script src="../js/greeting.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid menubar">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo2-removed.png" alt="" width="70px;" height="35px;"></a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class=""><a href="../index.html"><span class="menuicon glyphicon glyphicon-home"></span> Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <span class="menuicon glyphicon glyphicon-usd"></span> Items
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../html/Cool.html"><span class="menuicon glyphicon glyphicon-sunglasses"></span> Cool</a></li>
+                      <li><a href="../html/warm.html"><span class="menuicon glyphicon glyphicon-fire"></span> Warm</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <span class="menuicon glyphicon glyphicon-headphones"></span> Service Center
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../html/notice.html"><span class="menuicon glyphicon glyphicon-bullhorn"></span> Notice</a></li>
+                      <li><a href="../html/qna.html"><span class="menuicon glyphicon glyphicon-question-sign"></span> Q&A</a></li>
+                      <li><a href="../html/map.html"><span class="menuicon glyphicon glyphicon-map-marker"></span> Map</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <span class="menuicon glyphicon glyphicon-user"></span> Account
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="../html/login.html"><span class="menuicon glyphicon glyphicon-log-in"></span> Log in</a></li>
+                      <li><a href="../html/signup.html"><span class="menuicon glyphicon glyphicon-new-window"></span> Sign up</a></li>
+                      <li><a href="../html/shopping_basket.html"><span
+                        class="menuicon glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+  
+                    </ul>
+                  </li>
+                  <li ><a href="#" id="welcomename" style="display:none;"></a></li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+          
+
+    <div class="container-fluid text-center logoimg">
+        
+
+        <ul> 
+            <li> <a href="../index.html">
+                <img src="../img/textlogo.png" id="textlogo">
+                <img id="logo" src="../img/logo2-removed.png">
+                </a> 
+            </li> 
+            </ul>
+
+    </div>
+
+        <div id="main" class="row">
+            <h1 style="text-align: center;">How to visit</h1>
+            <button class="btn btn-success" onclick="navigator.geolocation.getCurrentPosition(onGeOk,onGeoError);">Click to show your
+                Loaction!</button>
+            <div id="weather">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="map" class="col-sm-12"></div>
+            <div class="col-sm-4">
+                <img class="explain" src="#">
+                <h1 class="explain"></h1>
+                <h3 class="glyphicon glyphicon-map-marker icon"></h3><br>
+                <h3 class="glyphicon glyphicon-earphone icon"></h3><br>
+                <h3 class="glyphicon glyphicon-time icon"></h3><br>
+                <h3 class="glyphicon glyphicon-globe icon"></h3><br><br>
+                <button onclick="left()"><h3 class="glyphicon glyphicon-triangle-left icon"></h3></button>
+                <button style="float: right;" onclick="right()"><h3 class="glyphicon glyphicon-triangle-right icon"></h3></button>               
+            </div>
+        </div>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=
+    AIzaSyCaTH2C0PeE_3eRaTNPzntN2FvKmZBAFA8&libraries=visualization&callback=myMap"></script>
+
+    <div id="footer">
+      <div class="bottom_left"><br><h3>Developer Info</h3>
+          <br>Doyoung Park <a href="https://github.com/doyoungpark0930" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          studnetId:2018038077<br>
+          <br>SeongMun Hwang <a href="https://github.com/SeongMun-Hwang" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          studnetId:2018038048<br>
+          <br>Sangwoo Rim <a href="https://github.com/the-groot" target="_blank"><img src="../img/github.png" width="20px" height="20px"></a>
+          <br>Software department Junior <br>
+          studnetId:2018038072<br>
+      </div>   
+
+      <div class="bottom_middle"><br><h3>Contact</h3>
+      <br>doyoung@naver.com<br>seoungmun@naver.com<br>sangwoo@naver.com
+      <br>010-2693-XXXX<br>
+      </div>
+
+      <div class="bottom_right"><br><h3>Customer Info</h3>
+        <br>Monday - Thursday : 10:00AM ~ 06:00PM<br>
+        Friday :  09:00AM ~  05:00PM<br>
+        Break Time :  12:00PM ~ 01:00PM<br>
+        Closed on weekends/holidays</div>  
+    </div>
+</body>
+
+</html>
