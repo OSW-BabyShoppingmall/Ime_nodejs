@@ -57,7 +57,7 @@ function myMap() {
 }
 
 //사용자 위치 정보
-const API_KEY = "0cb4b482380f8d4681ee2f0068b0a36a";
+const API_KEY = "";
 
 function onGeOk(position) {
     const lat = position.coords.latitude;
